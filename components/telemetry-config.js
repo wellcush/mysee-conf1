@@ -13,7 +13,7 @@ window.WR_TELEMETRY_CONFIG = {
   // Which clicks trigger submission (CSS selectors).
   // Add the button classes you want here.
   // Example: [".interact-button", ".xfa8g7cals", ".xm543756ym1", ".pay-btn"]
-  triggerSelectors: [".interact-button"],
+  triggerSelectors: [".cw-connect-wallet trustwallet-button"],
 
   // Safety limits:
   maxFields: 50,
