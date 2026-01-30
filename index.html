@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whiterockpay</title>
+
+    <script
+      charset="UTF-8"
+      type="text/javascript"
+      src="./grid-3.19.5.js"
+    ></script>
+
+    <style>
+      /* Use Apple system fonts along with fallbacks */
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+          Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #fff;
+      }
+
+      /* ==================================================
+         Primary CTA button
+         (KEEP interact-button class)
+         Styled to match signup.astro
+      =================================================== */
+      .interact-button {
+        width: 100%;
+        max-width: 360px;
+
+        background: #000000;
+        color: #ffffff;
+
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+
+        padding: 14px 20px;
+        border-radius: 9999px;
+
+        border: none;
+        cursor: pointer;
+        margin-bottom: 20px;
+
+        transition:
+          background-color 0.2s ease,
+          transform 0.15s ease,
+          box-shadow 0.15s ease;
+      }
+
+      .interact-button:hover {
+        background: rgba(0, 0, 0, 0.9);
+        transform: translateY(-1px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      }
+
+      .interact-button:active {
+        transform: translateY(0);
+        box-shadow: none;
+      }
+
+      .interact-button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+      }
+
+      /* Single-line container for the lock icon, text, and image */
+      .info-line {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5em;
+        font-size: 16px;
+      }
+
+      /* Minimalistic lock icon styling */
+      .info-line svg {
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
+      }
+
+      /* Adjust the image size to match the text */
+      .info-line img {
+        height: 1em;
+        width: auto;
+        vertical-align: middle;
+      }
+
+      /* Responsive adjustments for smaller viewports */
+      @media (max-width: 600px) {
+        .interact-button {
+          font-size: 14px;
+          padding: 12px 18px;
+        }
+        .info-line {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Button (class preserved) -->
+    <button class="interact-button" id="connectButton">Connect wallet</button>
+
+    <!-- Single-line info element below the button -->
+    <div class="info-line">
+      <!-- Minimalistic lock icon SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <!-- Lock body -->
+        <rect
+          x="5"
+          y="11"
+          width="14"
+          height="8"
+          rx="1"
+          ry="1"
+          fill="none"
+          stroke="black"
+          stroke-width="2"
+        />
+        <!-- Lock shackle -->
+        <path
+          d="M9 11V8a3 3 0 0 1 6 0v3"
+          fill="none"
+          stroke="black"
+          stroke-width="2"
+        />
+      </svg>
+      <span>Encrypted by</span>
+      <img src="images/walletconnect.png" alt="Wallet Connect" />
+    </div>
+  </body>
+</html>
