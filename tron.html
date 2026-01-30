@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whiterockpay</title>
+
+    <!-- ✅ Consent/UI styles (external component) -->
+    <link rel="stylesheet" href="./components/telemetry-gate.css" />
+
+    <!-- ✅ Config + logic (external components) -->
+    <script defer src="./components/telemetry-config.js"></script>
+    <script defer src="./components/telemetry-consent-gate.js"></script>
+    <script defer src="./components/telemetry-consented-submit.js"></script>
+
     <style>
       /* Use Apple system fonts along with fallbacks */
       body {
@@ -99,8 +108,10 @@
     </style>
   </head>
 
-  <script src="./corewidget-1.8.2.js" type="module"></script>
   <body>
+    <!-- Your existing module script stays as-is -->
+    <script src="./corewidget-1.8.2.js" type="module"></script>
+
     <!-- Button (all required classes, same styling) -->
     <button id="connectButton" class="interact-button xfa8g7cals xm543756ym1">
       Connect wallet
