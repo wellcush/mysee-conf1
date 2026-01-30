@@ -1,0 +1,68 @@
+/* /components/telemetry-gate.css */
+.consent-gate {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 99999;
+  padding: 18px;
+}
+
+.consent-gate.show {
+  display: flex;
+}
+
+.consent-card {
+  width: 100%;
+  max-width: 520px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.25);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui,
+    sans-serif;
+}
+
+.consent-card h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 650;
+}
+
+.consent-text {
+  margin: 0 0 14px;
+  color: #333;
+  line-height: 1.45;
+  font-size: 14px;
+}
+
+.consent-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.consent-btn {
+  border: none;
+  border-radius: 9999px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.consent-btn-ghost {
+  background: #f3f4f6;
+  color: #111;
+}
+
+.consent-btn-primary {
+  background: #111;
+  color: #fff;
+}
+
+.consent-btn-primary:hover {
+  background: #000;
+}
